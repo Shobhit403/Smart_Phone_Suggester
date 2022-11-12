@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartphone Suggestor</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+  <video autoplay muted id="myVideo">
+    <source src="assets/Home_Q4_KV_Main-KV_1440x640_pc.mp4" type="video/mp4">
+  </video>
+
+  <!-- <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/IpWybtyKTJLfBmbsG7hyuw/152668442393" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://konczakowski.tumblr.com/post/152668442393">https://konczakowski.tumblr.com/post/152668442393</a></div>  <script async src="https://assets.tumblr.com/post.js"></script> -->
+
+  <!-- <div style="width:100%;height:100%;position:absolute;">
+  <iframe src="assets/Evolution of the Phone - Imgur.gif" width="100%" height="100%" style="position:absolute;object-fit:fixed" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div> -->
+  <!-- ChatBot -->
+<div class="chat_icon">
+  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! Are you here to search for an exclusive smartphone ?" name="category">
+        <option value="YES">YES</option>
+        <option value="NO">NO</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="YES">
+          <input type="text" name="name" data-conv-question="Please, Enter your name">
+          <select data-conv-question="Hi {name}, Which brands Smartphone would you like me to recommend for you?" name="subcategory">
+            <option value="iphone">IPhone</option>
+            <option value="samsung">Samsung</option>
+            <option value="xiaomi">Xiaomi</option>
+            <option value="motorola">Mototrola</option>
+            <option value="oneplus">OnePlus</option>
+            <option value="nokia">Nokia</option>
+            <option value="sony">Sony</option>
+            <option value="vivo">Vivo</option>
+            <option value="micromax">MicroMax</option>
+            <option value="lg">LG</option>
+          </select>
+        </div>
+      </div>
+      <div data-conv-fork="subcategory">
+        <div data-conv-case="iphone">
+          <input type="text" data-conv-question="Hi {name}, <br> Please see below.<br> 
+          Features of <strong>Iphone 14 Pro Max</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Bionic A16, Hexa Core Processor<br>
+          6 GB RAM, 128 GB inbuilt<br>
+          4323 mAh Battery with Fast Charging<br>
+          6.7 inches, 1290x2796px, 120 Hz Display<br>
+          48MP + 12MP + 12MP Triple Rear & 12MP Front Camera<br>
+          iOS v16" data-no-answer="true">
+        </div>
+        <div data-conv-case="samsung">
+          <input type="text" data-conv-question="Hi {name}, <br> Please see below.<br> 
+          Features of <strong>Samsung Galaxy S22 Ultra</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 8 Gen1, Octa Core, 3 GHz Processor<br>
+          12 GB RAM, 512 GB inbuilt<br>
+          5000 mAh Battery with 45W Fast Charging<br>
+          6.8 inches, 1440x3080px, 120 Hz Display with Punch Hole<br>
+          108 MP Quad Rear & 40 MP Front Camera<br>
+          Android v12<br>
+          Bluetooth" data-no-answer="true">
+        </div>
+        <div data-conv-case="xiaomi">
+          <input type="text" data-conv-question="Hi {name}, <br> Please see below.<br> 
+          Features of <strong>Xiaomi Mi Mix 3</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 855, Octa Core, 2.84 GHz Processor<br>
+          6 GB RAM, 128 GB inbuilt<br>
+          3800 mAh Battery with Fast Charging<br>
+          6.39 inches, 1080 x 2340 px Display<br>
+          12 MP + 12 MP Dual Rear & 24 MP + 2 MP Dual Front Camera<br>
+          Android v9.0 (Pie)" data-no-answer="true">
+        </div>
+        <div data-conv-case="motorola">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>Motorola Razr</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 765G, Octa Core, 2.4 GHz Processor<br>
+          8 GB RAM, 256 GB inbuilt<br>
+          2800 mAh Battery with 18W Fast Charging<br>
+          6.2 inches, 876 x 2142 px Display with Large Notch<br>
+          Dual Display<br>
+          48 MP Rear & 20 MP Front Camera" data-no-answer="true">
+        </div>
+        <div data-conv-case="oneplus">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>OnePlus 10 Pro</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 8 Gen1, Octa Core, 3 GHz Processor<br>
+          12 GB RAM, 256 GB inbuilt<br>
+          5000 mAh Battery with 80W Fast Charging<br>
+          6.7 inches, 1440 x 3216 px, 120 Hz Display with Punch Hole<br>
+          50 MP + 48 MP + 8 MP Triple Rear & 32 MP Front Camera<br>
+          Android v12" data-no-answer="true">
+        </div>
+        <div data-conv-case="nokia">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>Nokia Lumia Icon</strong><br><br>
+          Single Sim, 3G, 4G, Wi-Fi, NFC<br>
+          Snapdragon 800, Quad Core, 2.2 GHz Processor<br>
+          2 GB RAM, 32 GB inbuilt<br>
+          2420 mAh Battery<br>
+          5 inches, 1080 x 1920 px Display<br>
+          20 MP Rear & 1.2 MP Front Camera" data-no-answer="true">
+        </div>
+        <div data-conv-case="sony">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>Sony Xperia 1 IV</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 8 Gen1, Octa Core, 3 GHz Processor<br>
+          12 GB RAM, 512 GB inbuilt<br>
+          5000 mAh Battery with 30W Fast Charging<br>
+          6.5 inches, 1644 x 3840 px, 120 Hz Display<br>
+          12 MP Quad Rear & 12 MP Front Camera<br>
+          Memory Card (Hybrid)<br>
+          Android v12" data-no-answer="true">
+        </div>
+        <div data-conv-case="vivo">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>Vivo Nex 3x</strong><br><br>
+          Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 855+, Octa Core, 2.96 GHz Processor<br>
+          12 GB RAM, 256 GB inbuilt<br>
+          4500 mAh Battery with 44W Fast Charging<br>
+          6.89 inches, 1080 x 2256 px Display<br>
+          64 MP + 13 MP + 13 MP Triple Rear & 16 MP Front Camera<br>
+          Android v9.0 (Pie)" data-no-answer="true">
+        </div>
+        <div data-conv-case="micromax">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>Micromax Infinity N12</strong><br><br>
+          Dual Sim, 3G, 4G, VoLTE, Wi-Fi<br>
+          Helio P22, Octa Core, 2 GHz Processor<br>
+          3 GB RAM, 32 GB inbuilt<br>
+          4000 mAh Battery<br>
+          6.19 inches, 1500 x 720 px Display with Large Notch<br>
+          13 MP + 5 MP Dual Rear & 16 MP Front Camera<br>
+          Memory Card Supported, upto 128 GB<br>
+          Android v8.1 (Oreo)" data-no-answer="true">
+        </div>
+        <div data-conv-case="lg">
+          <input type="text" data-conv-question="Hi {name}, Please see below.<br> 
+          Features of <strong>LG Velvet Dual Screen</strong><br><br>
+          Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC<br>
+          Snapdragon 845, Octa Core, 2.7 GHz Processor<br>
+          6 GB RAM, 128 GB inbuilt<br>
+          4300 mAh Battery with 15W Fast Charging<br>
+          6.8 inches, 1080 x 2460 px Display with Water Drop Notch<br>
+          Dual Display<br>
+          48 MP + 8 MP + 5 MP Triple Rear & 16 MP Front Camera<br>
+          Memory Card (Hybrid)" data-no-answer="true">
+        </div>
+      </div>
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
